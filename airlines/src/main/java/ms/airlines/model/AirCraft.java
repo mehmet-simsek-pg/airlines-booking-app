@@ -31,7 +31,7 @@ public class AirCraft {
 
     @Column(nullable = false)
     @JsonFormat(pattern = "yyyy-MM-dd")
-    private LocalDate manufacturerDate;
+    private LocalDate manufactureDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "flight_schedule_id", nullable = false)
