@@ -16,15 +16,12 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class BaseFlightScheduleRequest {
 
-    @NotEmpty(message = ValidationMessage.FlightSchedule.FLIGHT_DATE_NOT_EMPTY)
     @NotNull(message = ValidationMessage.FlightSchedule.FLIGHT_DATE_NOT_NULL)
     private LocalDate flightDate;
 
-    @NotEmpty(message = ValidationMessage.FlightSchedule.DEPARTURE_DATE_NOT_EMPTY)
     @NotNull(message = ValidationMessage.FlightSchedule.DEPARTURE_DATE_NOT_NULL)
     private LocalDate departure;
 
-    @NotEmpty(message = ValidationMessage.FlightSchedule.ARRIVAL_DATE_NOT_EMPTY)
     @NotNull(message = ValidationMessage.FlightSchedule.ARRIVAL_DATE_NOT_NULL)
     private LocalDate arrival;
 }

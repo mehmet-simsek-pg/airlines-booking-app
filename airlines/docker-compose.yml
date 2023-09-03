@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  app:
+    image: 'airlines-booking-app:latest'
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    deploy:
+      mode: replicated
+      replicas: 1
+    networks:
+      - airlines-booking-app
+
+networks:
+  airlines-booking-app:

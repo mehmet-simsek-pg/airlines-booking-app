@@ -13,7 +13,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BaseAirCraftRequest {
-    @NotEmpty(message = ValidationMessage.AirCraft.CAPACITY_NOT_EMPTY)
+
     @NotNull(message = ValidationMessage.AirCraft.CAPACITY_NOT_NULL)
     private Integer capacity;
 
@@ -21,7 +21,6 @@ public class BaseAirCraftRequest {
     @NotNull(message = ValidationMessage.AirCraft.MANUFACTURER_NOT_NULL)
     private String manufacturer;
 
-    @NotEmpty(message = ValidationMessage.AirCraft.MANUFACTURE_DATE_NOT_EMPTY)
     @NotNull(message = ValidationMessage.AirCraft.MANUFACTURE_DATE_NOT_NULL)
     private LocalDate manufactureDate;
 

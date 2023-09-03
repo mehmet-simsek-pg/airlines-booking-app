@@ -13,7 +13,7 @@ public class ValidationMessage {
         }
 
         public static final String EMAIL_REGEX = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-        public static final String PHONE_REGEX = "^[09]{2}[0-9]{9}$";
+        public static final String PHONE_REGEX = " ^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$";
     }
 
     public static class AirCraft {

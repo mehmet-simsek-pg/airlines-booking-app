@@ -1,0 +1,1019 @@
+2023-09-03 15:08:56 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 12052 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 15:08:56 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 15:08:56 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 15:08:56 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 15:08:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 15:08:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 114 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 15:08:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 15:08:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 15:08:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 15:08:58 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 15:08:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2423 ms
+# Swagger configuration2023-09-03 15:08:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 15:08:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 15:08:59 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:071f27dd-c836-4ec3-8d02-c4e7e2243ce2'
+# Swagger configuration2023-09-03 15:08:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 15:08:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 15:08:59 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 15:08:59 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 15:09:01 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 15:09:01 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:09:02 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 15:09:03 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 15:09:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 15:09:03 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 8.149 seconds (JVM running for 8.756)
+# Swagger configuration2023-09-03 15:09:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:09:50 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:09:50 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+# Swagger configuration2023-09-03 15:12:30 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.lang.Integer'. Check configuration for 'age'] with root cause
+# Swagger configurationjavax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.lang.Integer'. Check configuration for 'age'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:54)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:109)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:250)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-03 15:12:48 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.lang.Integer'. Check configuration for 'age'] with root cause
+# Swagger configurationjavax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.lang.Integer'. Check configuration for 'age'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:54)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:109)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:250)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-03 15:13:28 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.lang.Integer'. Check configuration for 'age'] with root cause
+# Swagger configurationjavax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.lang.Integer'. Check configuration for 'age'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:54)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:109)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:250)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-03 15:19:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:19:35 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 15:19:35 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 15:19:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 15:19:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 15:19:42 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 20668 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 15:19:42 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 15:19:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 15:19:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 15:19:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 15:19:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 15:19:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 15:19:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 15:19:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 15:19:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 15:19:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2305 ms
+# Swagger configuration2023-09-03 15:19:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 15:19:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 15:19:44 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:19ab174a-d7b6-427d-83d4-7764656e71ae'
+# Swagger configuration2023-09-03 15:19:45 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 15:19:45 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 15:19:45 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 15:19:45 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 15:19:46 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 15:19:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:19:47 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 15:19:48 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 15:19:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 15:19:49 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 7.256 seconds (JVM running for 7.879)
+# Swagger configuration2023-09-03 15:19:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:19:54 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:19:54 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+# Swagger configuration2023-09-03 15:19:55 INFO  ms.airlines.service.PassengerService - Passenger created successfully
+# Swagger configuration2023-09-03 15:19:55 INFO  m.a.controller.PassengerController - Passenger API : Created successfully
+# Swagger configuration2023-09-03 15:20:02 INFO  ms.airlines.service.PassengerService - Passenger listed successfully
+# Swagger configuration2023-09-03 15:20:02 INFO  m.a.controller.PassengerController - Passenger API : Listed successfully
+# Swagger configuration2023-09-03 15:20:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:20:29 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 15:20:29 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 15:20:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 15:20:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 15:41:16 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 18544 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 15:41:16 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 15:41:16 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 15:41:16 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 15:41:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 15:41:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 15:41:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 15:41:18 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 15:41:18 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 15:41:18 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 15:41:18 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2462 ms
+# Swagger configuration2023-09-03 15:41:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 15:41:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 15:41:19 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ed5699c4-df90-44b5-b51d-bc5ffbe83b0e'
+# Swagger configuration2023-09-03 15:41:19 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 15:41:19 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 15:41:19 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 15:41:20 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 15:41:21 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 15:41:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:41:22 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 15:41:23 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 15:41:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 15:41:23 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 7.698 seconds (JVM running for 8.301)
+# Swagger configuration2023-09-03 15:41:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:41:42 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:41:42 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+# Swagger configuration2023-09-03 15:41:42 WARN  o.s.web.servlet.PageNotFound - Request method 'PUT' not supported
+# Swagger configuration2023-09-03 15:41:42 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+# Swagger configuration2023-09-03 15:42:00 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> ms.airlines.controller.PassengerController.updatePassenger(java.lang.String,ms.airlines.dto.request.UpdatePassengerRequest) with 7 errors: [Field error in object 'updatePassengerRequest' on field 'address': rejected value [null]; codes [NotEmpty.updatePassengerRequest.address,NotEmpty.address,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.address,address]; arguments []; default message [address]]; default message [Address cannot be empty]] [Field error in object 'updatePassengerRequest' on field 'nationality': rejected value [null]; codes [NotNull.updatePassengerRequest.nationality,NotNull.nationality,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.nationality,nationality]; arguments []; default message [nationality]]; default message [Nationality cannot be null]] [Field error in object 'updatePassengerRequest' on field 'nationality': rejected value [null]; codes [NotEmpty.updatePassengerRequest.nationality,NotEmpty.nationality,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.nationality,nationality]; arguments []; default message [nationality]]; default message [Nationality cannot be empty]] [Field error in object 'updatePassengerRequest' on field 'address': rejected value [null]; codes [NotNull.updatePassengerRequest.address,NotNull.address,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.address,address]; arguments []; default message [address]]; default message [Address cannot be null]] [Field error in object 'updatePassengerRequest' on field 'age': rejected value [null]; codes [NotNull.updatePassengerRequest.age,NotNull.age,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.age,age]; arguments []; default message [age]]; default message [Age cannot be null]] [Field error in object 'updatePassengerRequest' on field 'lastName': rejected value [null]; codes [NotEmpty.updatePassengerRequest.lastName,NotEmpty.lastName,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.lastName,lastName]; arguments []; default message [lastName]]; default message [Last name cannot be empty]] [Field error in object 'updatePassengerRequest' on field 'lastName': rejected value [null]; codes [NotNull.updatePassengerRequest.lastName,NotNull.lastName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.lastName,lastName]; arguments []; default message [lastName]]; default message [Last name cannot be null]] ]
+# Swagger configuration2023-09-03 15:42:11 ERROR ms.airlines.service.PassengerService - Passenger not found : {}1
+# Swagger configuration2023-09-03 15:42:11 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [ms.airlines.exception.PassengerNotFoundException: Passenger not found]
+# Swagger configuration2023-09-03 15:42:24 INFO  ms.airlines.service.PassengerService - Passenger created successfully
+# Swagger configuration2023-09-03 15:42:24 INFO  m.a.controller.PassengerController - Passenger API : Created successfully
+# Swagger configuration2023-09-03 15:42:39 INFO  ms.airlines.service.PassengerService - Passenger listed successfully
+# Swagger configuration2023-09-03 15:42:39 INFO  m.a.controller.PassengerController - Passenger API : Listed successfully
+# Swagger configuration2023-09-03 15:43:00 INFO  ms.airlines.service.PassengerService - Passenger updated successfully : {}668d76ca-a838-4dfd-902d-1636b9edce42
+# Swagger configuration2023-09-03 15:43:00 INFO  m.a.controller.PassengerController - Passenger API : Updated successfully : {}668d76ca-a838-4dfd-902d-1636b9edce42
+# Swagger configuration2023-09-03 15:43:05 INFO  ms.airlines.service.PassengerService - Passenger found successfully : {}668d76ca-a838-4dfd-902d-1636b9edce42
+# Swagger configuration2023-09-03 15:43:05 INFO  m.a.controller.PassengerController - Passenger API : Found successfully : {}668d76ca-a838-4dfd-902d-1636b9edce42
+# Swagger configuration2023-09-03 15:44:40 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> ms.airlines.controller.PassengerController.updatePassenger(java.lang.String,ms.airlines.dto.request.UpdatePassengerRequest) with 7 errors: [Field error in object 'updatePassengerRequest' on field 'nationality': rejected value [null]; codes [NotEmpty.updatePassengerRequest.nationality,NotEmpty.nationality,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.nationality,nationality]; arguments []; default message [nationality]]; default message [Nationality cannot be empty]] [Field error in object 'updatePassengerRequest' on field 'nationality': rejected value [null]; codes [NotNull.updatePassengerRequest.nationality,NotNull.nationality,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.nationality,nationality]; arguments []; default message [nationality]]; default message [Nationality cannot be null]] [Field error in object 'updatePassengerRequest' on field 'address': rejected value [null]; codes [NotNull.updatePassengerRequest.address,NotNull.address,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.address,address]; arguments []; default message [address]]; default message [Address cannot be null]] [Field error in object 'updatePassengerRequest' on field 'age': rejected value [null]; codes [NotNull.updatePassengerRequest.age,NotNull.age,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.age,age]; arguments []; default message [age]]; default message [Age cannot be null]] [Field error in object 'updatePassengerRequest' on field 'lastName': rejected value [null]; codes [NotEmpty.updatePassengerRequest.lastName,NotEmpty.lastName,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.lastName,lastName]; arguments []; default message [lastName]]; default message [Last name cannot be empty]] [Field error in object 'updatePassengerRequest' on field 'address': rejected value [null]; codes [NotEmpty.updatePassengerRequest.address,NotEmpty.address,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.address,address]; arguments []; default message [address]]; default message [Address cannot be empty]] [Field error in object 'updatePassengerRequest' on field 'lastName': rejected value [null]; codes [NotNull.updatePassengerRequest.lastName,NotNull.lastName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [updatePassengerRequest.lastName,lastName]; arguments []; default message [lastName]]; default message [Last name cannot be null]] ]
+# Swagger configuration2023-09-03 15:46:58 INFO  ms.airlines.service.PassengerService - Passenger deleted successfully : {}668d76ca-a838-4dfd-902d-1636b9edce42
+# Swagger configuration2023-09-03 15:46:58 INFO  m.a.controller.PassengerController - Passenger API : Deleted successfully : {}668d76ca-a838-4dfd-902d-1636b9edce42
+# Swagger configuration2023-09-03 15:48:15 ERROR ms.airlines.service.AirCraftService - Aircraft list is empty
+# Swagger configuration2023-09-03 15:48:15 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [ms.airlines.exception.AirCraftNotFoundException: Aircraft list is empty]
+# Swagger configuration2023-09-03 15:50:31 ERROR ms.airlines.service.AirCraftService - Aircraft list is empty
+# Swagger configuration2023-09-03 15:50:31 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [ms.airlines.exception.AirCraftNotFoundException: Aircraft list is empty]
+# Swagger configuration2023-09-03 15:50:37 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.time.LocalDate'. Check configuration for 'manufactureDate'] with root cause
+# Swagger configurationjavax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.time.LocalDate'. Check configuration for 'manufactureDate'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:54)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:109)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:250)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-03 15:51:09 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.time.LocalDate'. Check configuration for 'manufactureDate'] with root cause
+# Swagger configurationjavax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.time.LocalDate'. Check configuration for 'manufactureDate'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:54)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:109)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:250)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-03 15:51:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:51:10 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 15:51:11 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 15:51:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 15:51:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 15:51:22 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 11868 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 15:51:22 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 15:51:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 15:51:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 15:51:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 15:51:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 15:51:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 15:51:24 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 15:51:24 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 15:51:24 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 15:51:24 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2145 ms
+# Swagger configuration2023-09-03 15:51:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 15:51:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 15:51:24 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:de3d281b-010a-4ccd-9993-bc940d9868b4'
+# Swagger configuration2023-09-03 15:51:25 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 15:51:25 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 15:51:25 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 15:51:25 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 15:51:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 15:51:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:51:27 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 15:51:28 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 15:51:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 15:51:28 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 6.619 seconds (JVM running for 7.252)
+# Swagger configuration2023-09-03 15:52:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:52:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:52:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+# Swagger configuration2023-09-03 15:52:16 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.lang.Integer'. Check configuration for 'capacity'] with root cause
+# Swagger configurationjavax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.lang.Integer'. Check configuration for 'capacity'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:54)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:109)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:250)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-03 15:52:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:52:26 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 15:52:26 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 15:52:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 15:52:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 15:52:33 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 18492 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 15:52:33 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 15:52:33 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 15:52:33 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 15:52:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 15:52:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 15:52:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 15:52:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 15:52:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 15:52:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 15:52:35 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2099 ms
+# Swagger configuration2023-09-03 15:52:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 15:52:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 15:52:35 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:3cd2686b-77fd-446d-ba3b-b0ae63868302'
+# Swagger configuration2023-09-03 15:52:35 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 15:52:35 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 15:52:36 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 15:52:36 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 15:52:37 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 15:52:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:52:38 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 15:52:39 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 15:52:39 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 15:52:39 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 6.808 seconds (JVM running for 7.452)
+# Swagger configuration2023-09-03 15:52:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:52:40 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 15:52:40 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 15:52:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 15:52:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 15:52:59 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 12484 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 15:52:59 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 15:52:59 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 15:52:59 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 15:53:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 15:53:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 15:53:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 15:53:01 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 15:53:01 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 15:53:01 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 15:53:01 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2246 ms
+# Swagger configuration2023-09-03 15:53:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 15:53:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 15:53:02 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:5f6a5230-e697-41cd-891a-a348d5883d0d'
+# Swagger configuration2023-09-03 15:53:02 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 15:53:02 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 15:53:02 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 15:53:02 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 15:53:03 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 15:53:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:53:04 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 15:53:06 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 15:53:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 15:53:06 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 7.674 seconds (JVM running for 8.277)
+# Swagger configuration2023-09-03 15:53:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:53:10 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:53:10 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+# Swagger configuration2023-09-03 15:53:10 ERROR m.a.service.FlightScheduleService - FlightSchedule not found : {}30
+# Swagger configuration2023-09-03 15:53:10 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [ms.airlines.exception.FlightScheduleNotFoundException: Flight schedule not found]
+# Swagger configuration2023-09-03 15:57:35 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.time.LocalDate'. Check configuration for 'departure'] with root cause
+# Swagger configurationjavax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotEmpty' validating type 'java.time.LocalDate'. Check configuration for 'departure'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:54)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:109)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:250)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-03 15:57:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:57:50 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 15:57:51 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 15:57:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 15:57:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 15:57:58 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 16308 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 15:57:58 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 15:57:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 15:57:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 15:57:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 15:57:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 15:58:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 15:58:00 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 15:58:00 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 15:58:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 15:58:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2275 ms
+# Swagger configuration2023-09-03 15:58:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 15:58:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 15:58:00 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ec6a1cc2-902d-4a30-b60f-f7b970a0e615'
+# Swagger configuration2023-09-03 15:58:00 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 15:58:01 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 15:58:01 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 15:58:01 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 15:58:02 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 15:58:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 15:58:03 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 15:58:05 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 15:58:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 15:58:05 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 7.777 seconds (JVM running for 8.408)
+# Swagger configuration2023-09-03 15:58:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:58:14 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 15:58:14 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+# Swagger configuration2023-09-03 15:58:15 INFO  m.a.service.FlightScheduleService - FlightSchedule created successfully
+# Swagger configuration2023-09-03 15:58:15 INFO  m.a.c.FlightScheduleController - FlightSchedule API : Created successfully
+# Swagger configuration2023-09-03 15:58:30 INFO  m.a.service.FlightScheduleService - FlightSchedule listed successfully
+# Swagger configuration2023-09-03 15:58:30 INFO  m.a.c.FlightScheduleController - FlightSchedule API : Listed successfully
+# Swagger configuration2023-09-03 15:59:45 INFO  ms.airlines.service.AirCraftService - AirCraft created successfully
+# Swagger configuration2023-09-03 15:59:45 INFO  m.a.controller.AirCraftController - Aircraft API :  Created successfully
+# Swagger configuration2023-09-03 15:59:51 INFO  ms.airlines.service.AirCraftService - AirCraft listed successfully
+# Swagger configuration2023-09-03 15:59:51 INFO  m.a.controller.AirCraftController - Aircraft API: Listed successfully
+# Swagger configuration2023-09-03 16:02:35 ERROR ms.airlines.service.PassengerService - Passenger list is empty
+# Swagger configuration2023-09-03 16:02:35 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [ms.airlines.exception.PassengerNotFoundException: Passenger list is empty]
+# Swagger configuration2023-09-03 16:02:39 INFO  ms.airlines.service.PassengerService - Passenger created successfully
+# Swagger configuration2023-09-03 16:02:39 INFO  m.a.controller.PassengerController - Passenger API : Created successfully
+# Swagger configuration2023-09-03 16:02:43 INFO  ms.airlines.service.PassengerService - Passenger listed successfully
+# Swagger configuration2023-09-03 16:02:43 INFO  m.a.controller.PassengerController - Passenger API : Listed successfully
+# Swagger configuration2023-09-03 16:04:15 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> ms.airlines.controller.ContactDetailController.createContactDetail(ms.airlines.dto.request.CreateContactDetailRequest): [Field error in object 'createContactDetailRequest' on field 'phone': rejected value [02221365478]; codes [Pattern.createContactDetailRequest.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createContactDetailRequest.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@70ebf99e,^[09]{2}[0-9]{9}$]; default message [Phone is not valid]] ]
+# Swagger configuration2023-09-03 16:04:34 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> ms.airlines.controller.ContactDetailController.createContactDetail(ms.airlines.dto.request.CreateContactDetailRequest): [Field error in object 'createContactDetailRequest' on field 'phone': rejected value [0222136547]; codes [Pattern.createContactDetailRequest.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createContactDetailRequest.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@70ebf99e,^[09]{2}[0-9]{9}$]; default message [Phone is not valid]] ]
+# Swagger configuration2023-09-03 16:05:20 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> ms.airlines.controller.ContactDetailController.createContactDetail(ms.airlines.dto.request.CreateContactDetailRequest): [Field error in object 'createContactDetailRequest' on field 'phone': rejected value [222136547]; codes [Pattern.createContactDetailRequest.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createContactDetailRequest.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@70ebf99e,^[09]{2}[0-9]{9}$]; default message [Phone is not valid]] ]
+# Swagger configuration2023-09-03 16:06:28 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> ms.airlines.controller.ContactDetailController.createContactDetail(ms.airlines.dto.request.CreateContactDetailRequest): [Field error in object 'createContactDetailRequest' on field 'phone': rejected value [22]; codes [Pattern.createContactDetailRequest.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createContactDetailRequest.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@70ebf99e,^[09]{2}[0-9]{9}$]; default message [Phone is not valid]] ]
+# Swagger configuration2023-09-03 16:06:32 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> ms.airlines.controller.ContactDetailController.createContactDetail(ms.airlines.dto.request.CreateContactDetailRequest): [Field error in object 'createContactDetailRequest' on field 'phone': rejected value [11]; codes [Pattern.createContactDetailRequest.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createContactDetailRequest.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@70ebf99e,^[09]{2}[0-9]{9}$]; default message [Phone is not valid]] ]
+# Swagger configuration2023-09-03 16:06:39 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> ms.airlines.controller.ContactDetailController.createContactDetail(ms.airlines.dto.request.CreateContactDetailRequest): [Field error in object 'createContactDetailRequest' on field 'phone': rejected value [111111111]; codes [Pattern.createContactDetailRequest.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createContactDetailRequest.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@70ebf99e,^[09]{2}[0-9]{9}$]; default message [Phone is not valid]] ]
+# Swagger configuration2023-09-03 16:06:43 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> ms.airlines.controller.ContactDetailController.createContactDetail(ms.airlines.dto.request.CreateContactDetailRequest): [Field error in object 'createContactDetailRequest' on field 'phone': rejected value [11111111]; codes [Pattern.createContactDetailRequest.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createContactDetailRequest.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@70ebf99e,^[09]{2}[0-9]{9}$]; default message [Phone is not valid]] ]
+# Swagger configuration2023-09-03 16:08:23 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> ms.airlines.controller.ContactDetailController.createContactDetail(ms.airlines.dto.request.CreateContactDetailRequest): [Field error in object 'createContactDetailRequest' on field 'phone': rejected value [12345678]; codes [Pattern.createContactDetailRequest.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createContactDetailRequest.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@70ebf99e,^[09]{2}[0-9]{9}$]; default message [Phone is not valid]] ]
+# Swagger configuration2023-09-03 16:11:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 16:11:42 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 16:11:42 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 16:11:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 16:11:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 16:15:29 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 18900 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 16:15:29 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 16:15:29 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 16:15:29 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 16:15:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 16:15:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 16:15:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 16:15:32 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 16:15:32 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 16:15:32 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 16:15:32 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2865 ms
+# Swagger configuration2023-09-03 16:15:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 16:15:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 16:15:32 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1a534928-4536-4d69-bbd3-d946afdaa8da'
+# Swagger configuration2023-09-03 16:15:33 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 16:15:33 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 16:15:33 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 16:15:33 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 16:15:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 16:15:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 16:15:35 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 16:15:36 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 16:15:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 16:15:36 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 7.508 seconds (JVM running for 8.091)
+# Swagger configuration2023-09-03 16:16:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 16:16:00 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 16:16:00 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+# Swagger configuration2023-09-03 16:16:07 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1009 ms
+# Swagger configuration2023-09-03 16:16:55 ERROR ms.airlines.service.AirCraftService - Aircraft list is empty
+# Swagger configuration2023-09-03 16:16:55 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [ms.airlines.exception.AirCraftNotFoundException: Aircraft list is empty]
+# Swagger configuration2023-09-03 16:18:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 16:18:07 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 16:18:07 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 16:18:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 16:18:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 18:44:24 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 10944 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 18:44:24 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 18:44:24 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 18:44:24 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 18:44:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 18:44:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 136 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 18:44:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 18:44:29 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 18:44:29 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 18:44:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 18:44:29 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4898 ms
+# Swagger configuration2023-09-03 18:44:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 18:44:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 18:44:30 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:0bd5966c-fa88-4424-826d-f1c968ae66ab'
+# Swagger configuration2023-09-03 18:44:30 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 18:44:30 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 18:44:30 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 18:44:30 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 18:44:32 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 18:44:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 18:44:33 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 18:44:35 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 18:44:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 18:44:35 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 11.558 seconds (JVM running for 12.962)
+# Swagger configuration2023-09-03 18:44:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 18:44:48 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 18:44:49 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 18:44:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 18:44:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 18:49:27 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 22636 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 18:49:27 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 18:49:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 18:49:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 18:49:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 18:49:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 18:49:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 18:49:31 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 18:49:31 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 18:49:31 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 18:49:31 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4077 ms
+# Swagger configuration2023-09-03 18:49:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 18:49:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 18:49:32 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:92566121-75de-427c-a430-8b602c18104b'
+# Swagger configuration2023-09-03 18:49:32 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 18:49:32 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 18:49:32 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 18:49:33 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 18:49:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 18:49:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 18:49:35 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 18:49:37 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 18:49:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 18:49:37 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 10.795 seconds (JVM running for 11.857)
+# Swagger configuration2023-09-03 18:49:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 18:49:44 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 18:49:44 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 18:49:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 18:49:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 19:00:44 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 18080 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 19:00:44 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 19:00:44 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 19:00:44 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 19:00:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 19:00:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 146 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 19:00:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 19:00:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 19:00:47 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 19:00:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 19:00:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3485 ms
+# Swagger configuration2023-09-03 19:00:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 19:00:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 19:00:48 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:266e736b-0506-4bdf-942b-bf261624350c'
+# Swagger configuration2023-09-03 19:00:48 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 19:00:48 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 19:00:49 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 19:00:49 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 19:00:50 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 19:00:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 19:00:51 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 19:00:53 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 19:00:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 19:00:53 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 10.325 seconds (JVM running for 11.683)
+# Swagger configuration2023-09-03 19:02:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 19:02:18 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 19:02:19 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 19:02:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 19:02:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 19:02:39 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 23300 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 19:02:39 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 19:02:39 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 19:02:39 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 19:02:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 19:02:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 153 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 19:02:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 19:02:42 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 19:02:42 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 19:02:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 19:02:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3079 ms
+# Swagger configuration2023-09-03 19:02:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 19:02:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 19:02:42 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:af0d9504-19c4-41a7-a9fd-c627163dc6d1'
+# Swagger configuration2023-09-03 19:02:43 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 19:02:43 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 19:02:43 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 19:02:43 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 19:02:44 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 19:02:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 19:02:46 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 19:02:48 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 19:02:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 19:02:48 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 10.02 seconds (JVM running for 10.947)
+# Swagger configuration2023-09-03 19:03:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 19:03:20 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 19:03:20 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 19:03:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 19:03:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 19:12:38 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 17056 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 19:12:38 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 19:12:38 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 19:12:38 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 19:12:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 19:12:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 149 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 19:12:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 19:12:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 19:12:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 19:12:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 19:12:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3272 ms
+# Swagger configuration2023-09-03 19:12:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 19:12:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 19:12:42 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:d8e66027-daa4-4b00-8061-7ddf8cf42de7'
+# Swagger configuration2023-09-03 19:12:42 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 19:12:42 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 19:12:42 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 19:12:43 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 19:12:44 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 19:12:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 19:12:45 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 19:12:47 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 19:12:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 19:12:47 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 9.754 seconds (JVM running for 10.648)
+# Swagger configuration2023-09-03 19:12:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 19:12:50 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 19:12:51 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 19:12:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 19:12:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 20:27:08 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 19060 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 20:27:08 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 20:27:08 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 20:27:08 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 20:27:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 20:27:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 177 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 20:27:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 20:27:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 20:27:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 20:27:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 20:27:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3308 ms
+# Swagger configuration2023-09-03 20:27:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 20:27:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 20:27:12 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:4b91f8a8-b499-4ac6-b4d6-64da552b8f03'
+# Swagger configuration2023-09-03 20:27:12 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 20:27:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 20:27:13 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 20:27:13 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 20:27:14 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 20:27:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 20:27:15 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 20:27:17 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 20:27:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 20:27:17 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 9.896 seconds (JVM running for 10.568)
+# Swagger configuration2023-09-03 20:27:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 20:27:23 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+# Swagger configuration2023-09-03 20:27:23 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+# Swagger configuration2023-09-03 20:27:25 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1066 ms
+# Swagger configuration2023-09-03 20:28:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 20:28:28 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 20:28:28 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 20:28:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 20:28:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 22:09:30 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 12496 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 22:09:30 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 22:09:30 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 22:09:30 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 22:09:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 22:09:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 22:09:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 22:09:32 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 22:09:32 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 22:09:32 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 22:09:32 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2825 ms
+# Swagger configuration2023-09-03 22:09:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 22:09:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 22:09:33 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:110e783c-be6c-48c1-9309-9bf2fc450ec0'
+# Swagger configuration2023-09-03 22:09:33 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 22:09:33 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 22:09:33 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 22:09:34 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 22:09:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 22:09:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 22:09:35 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 22:09:37 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 22:09:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 22:09:37 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 7.872 seconds (JVM running for 9.226)
+# Swagger configuration2023-09-03 22:09:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 22:09:43 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 22:09:43 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 22:09:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 22:09:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration2023-09-03 22:32:37 INFO  ms.airlines.AirlinesApplication - Starting AirlinesApplication using Java 18.0.2 on SWI-MSI with PID 22260 (C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines\target\classes started by MehmetSimsek in C:\Users\MehmetSimsek\Desktop\desktop\airlines-booking-app\airlines)
+# Swagger configuration2023-09-03 22:32:37 INFO  ms.airlines.AirlinesApplication - No active profile set, falling back to 1 default profile: "default"
+# Swagger configuration2023-09-03 22:32:37 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+# Swagger configuration2023-09-03 22:32:37 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+# Swagger configuration2023-09-03 22:32:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+# Swagger configuration2023-09-03 22:32:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 170 ms. Found 9 JPA repository interfaces.
+# Swagger configuration2023-09-03 22:32:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+# Swagger configuration2023-09-03 22:32:40 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+# Swagger configuration2023-09-03 22:32:40 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+# Swagger configuration2023-09-03 22:32:40 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+# Swagger configuration2023-09-03 22:32:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2626 ms
+# Swagger configuration2023-09-03 22:32:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+# Swagger configuration2023-09-03 22:32:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+# Swagger configuration2023-09-03 22:32:40 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:2183e216-f7fe-4dc5-b8ff-51b0f6c4b7c9'
+# Swagger configuration2023-09-03 22:32:40 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+# Swagger configuration2023-09-03 22:32:41 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+# Swagger configuration2023-09-03 22:32:41 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+# Swagger configuration2023-09-03 22:32:41 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+# Swagger configuration2023-09-03 22:32:42 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+# Swagger configuration2023-09-03 22:32:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 22:32:43 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+# Swagger configuration2023-09-03 22:32:44 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+# Swagger configuration2023-09-03 22:32:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+# Swagger configuration2023-09-03 22:32:44 INFO  ms.airlines.AirlinesApplication - Started AirlinesApplication in 8.033 seconds (JVM running for 8.767)
+# Swagger configuration2023-09-03 22:32:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+# Swagger configuration2023-09-03 22:32:53 INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+# Swagger configuration2023-09-03 22:32:53 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+# Swagger configuration2023-09-03 22:32:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+# Swagger configuration2023-09-03 22:32:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+# Swagger configuration
