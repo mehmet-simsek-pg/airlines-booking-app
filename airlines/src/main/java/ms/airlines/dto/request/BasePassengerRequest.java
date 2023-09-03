@@ -25,7 +25,6 @@ public class BasePassengerRequest {
     @NotNull(message = ValidationMessage.Passenger.ADDRESS_NOT_NULL)
     private String address;
 
-    @NotEmpty(message = ValidationMessage.Passenger.AGE_NOT_EMPTY)
     @NotNull(message = ValidationMessage.Passenger.AGE_NOT_NULL)
     private Integer age;
 
