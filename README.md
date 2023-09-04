@@ -32,7 +32,3 @@ The application can be built and run by the `Docker`.
 - Maven
 - Docker
 - Docker Compose
-
-## Database Diagram
-
-(./database_diagram.png)
