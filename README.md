@@ -4,8 +4,14 @@
 The application can be built and run by the `Docker`.
 
 ### Prerequisites
-- Docker that can install with link ```sh https://docs.docker.com/get-docker/```
-- Docker compose that can install with link ```sh https://docs.docker.com/compose/install/```
+- Docker that can install with link
+- ```sh
+  https://docs.docker.com/get-docker/
+  ```
+- Docker compose that can install with link
+- ```sh
+  https://docs.docker.com/compose/install/
+  ```
 
 ### Installing
 
@@ -32,7 +38,3 @@ The application can be built and run by the `Docker`.
 - Maven
 - Docker
 - Docker Compose
-
-## Database Diagram
-
-(./database_diagram.png)
