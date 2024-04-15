@@ -1,0 +1,34 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.26.xsd">
+    <changeSet author="Mehmet Simsek" id="clean_test_data" runAlways="true">
+        <sqlFile path="scripts/clean.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <!--	INSERT SKRIPTS -->
+
+    <changeSet author="Mehmet Simsek" id="insert airplane" runAlways="true">
+        <sqlFile path="scripts/airplane.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert route" runAlways="true">
+        <sqlFile path="scripts/route.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert flight" runAlways="true">
+        <sqlFile path="scripts/flight.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert airfare" runAlways="true">
+        <sqlFile path="scripts/airfare.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert passenger" runAlways="true">
+        <sqlFile path="scripts/passenger.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert country" runAlways="true">
+        <sqlFile path="scripts/country.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert airport" runAlways="true">
+        <sqlFile path="scripts/airport.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert employees" runAlways="true">
+        <sqlFile path="scripts/employees.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+</databaseChangeLog>

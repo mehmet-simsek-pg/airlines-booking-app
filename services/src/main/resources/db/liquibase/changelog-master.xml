@@ -1,0 +1,7 @@
+<databaseChangeLog  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.26.xsd">
+    <include file="init_changelog.xml" relativeToChangelogFile="true" context="db"/>
+    <include file="test-data/changelog-test_data.xml" relativeToChangelogFile="true" context="init"/>
+</databaseChangeLog>
