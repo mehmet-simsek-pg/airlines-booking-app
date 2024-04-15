@@ -1,0 +1,23 @@
+
+# Spring configuration
+spring:
+  application:
+    name: nba
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/airlines
+  liquibase:
+    change-log: db/liquibase/changelog-master.xml
+    enabled: false
+  jpa:
+    open-in-view: false
+
+
+# Swagger configuration
+application:
+  title: Airlines Booking System
+  description: Airlines Booking System API
+  version: 1.0.0
+  licence: Apache 2.0
+  url: https://www.apache.org/licenses/LICENSE-2.0

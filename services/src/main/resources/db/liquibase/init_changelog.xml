@@ -2,7 +2,7 @@
 
     <changeSet author="Mehmet Simsek (generated)" id="Create Airplane Table">
         <createTable tableName="airplane">
-            <column name="id" type="INTEGER">
+            <column autoIncrement="true" name="id" type="INTEGER">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="airplane_pkey"/>
             </column>
             <column name="capacity" type="INTEGER"/>
