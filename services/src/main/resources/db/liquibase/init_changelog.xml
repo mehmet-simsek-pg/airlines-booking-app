@@ -5,8 +5,15 @@
             <column autoIncrement="true" name="id" type="INTEGER">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="airplane_pkey"/>
             </column>
-            <column name="capacity" type="INTEGER"/>
-            <column name="weight" type="INTEGER"/>
+            <column name="code" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="capacity" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="weight" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
             <column name="company" type="VARCHAR(20)">
                 <constraints nullable="false"/>
             </column>
@@ -14,7 +21,7 @@
     </changeSet>
     <changeSet author="Mehmet Simsek (generated)" id="Create Route Table">
         <createTable tableName="route">
-            <column name="id" type="INTEGER">
+            <column autoIncrement="true" name="id" type="INTEGER">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="route_pkey"/>
             </column>
             <column name="take_of_point" type="VARCHAR(20)">
@@ -26,26 +33,39 @@
             <column name="type" type="VARCHAR(20)">
                 <constraints nullable="false"/>
             </column>
+            <column name="time_in_min" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
     </changeSet>
     <changeSet author="Mehmet Simsek (generated)" id="Create Flight Table">
         <createTable tableName="flight">
-            <column name="id" type="VARCHAR(15)">
+            <column autoIncrement="true" name="id" type="INTEGER">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="flight_pkey"/>
             </column>
-            <column name="departure" type="DATE">
+            <column name="code" type="VARCHAR(20)">
                 <constraints nullable="false"/>
             </column>
-            <column name="arrival" type="DATE">
+            <column name="departure" type="DATETIME">
                 <constraints nullable="false"/>
             </column>
-            <column name="flight_date" type="DATE">
+            <column name="arrival" type="DATETIME">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet  author="Mehmet Simsek" id="Create Flight Airplane table">
+        <createTable tableName="flight_airplane">
+            <column name="flight_id" type="INTEGER">
                 <constraints nullable="false"/>
             </column>
             <column name="airplane_id" type="INTEGER">
-                <constraints nullable="false" foreignKeyName="airplane_pkey" referencedTableName="airplane"/>
+                <constraints nullable="false"/>
             </column>
         </createTable>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="Create PrimaryKey Flight Airplane" >
+        <addPrimaryKey tableName="flight_airplane" columnNames="flight_id, airplane_id" constraintName="flight_airplane_pkey" />
     </changeSet>
     <changeSet author="Mehmet Simsek (generated)" id="Create Airfare Table">
         <createTable tableName="airfare">
@@ -58,10 +78,20 @@
             <column name="description" type="VARCHAR(35)">
                 <constraints nullable="false"/>
             </column>
-            <column name="flight_id" type="VARCHAR(15)">
-                <constraints nullable="false" foreignKeyName="flight_pkey" referencedTableName="flight"/>
+        </createTable>
+    </changeSet>
+    <changeSet  author="Mehmet Simsek" id="Create Flight Airfare table">
+        <createTable tableName="flight_airfare">
+            <column name="flight_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="airfare_id" type="INTEGER">
+                <constraints nullable="false"/>
             </column>
         </createTable>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="Create PrimaryKey Flight Airfare" >
+        <addPrimaryKey tableName="flight_airfare" columnNames="flight_id, airfare_id" constraintName="flight_airfare_pkey" />
     </changeSet>
     <changeSet author="Mehmet Simsek (generated)" id="Create Passenger Table">
         <createTable tableName="passenger">
@@ -83,15 +113,31 @@
             <column name="contact" type="VARCHAR(10)">
                 <constraints nullable="false"/>
             </column>
-            <column name="flight_id" type="VARCHAR(15)">
-                <constraints nullable="false" foreignKeyName="flight_pkey" referencedTableName="flight"/>
+        </createTable>
+    </changeSet>
+    <changeSet  author="Mehmet Simsek" id="Create Flight Passenger table">
+        <createTable tableName="flight_passenger">
+            <column name="flight_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="passenger_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="flight_code" type="VARCHAR(20)">
+                <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
+    <changeSet author="Mehmet Simsek" id="Create PrimaryKey Flight Passenger" >
+        <addPrimaryKey tableName="flight_passenger" columnNames="flight_id, passenger_id" constraintName="flight_passenger_pkey" />
+    </changeSet>
     <changeSet author="Mehmet Simsek (generated)" id="Create Country Table">
         <createTable tableName="country">
-            <column name="code" type="VARCHAR(15)">
+            <column autoIncrement="true" name="id" type="INTEGER">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="country_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(15)">
+                <constraints nullable="false"/>
             </column>
             <column name="name" type="VARCHAR(60)">
                 <constraints nullable="false"/>
@@ -100,8 +146,11 @@
     </changeSet>
     <changeSet author="Mehmet Simsek (generated)" id="Create Airport Table">
         <createTable tableName="airport">
-            <column name="code" type="VARCHAR(10)">
+            <column autoIncrement="true" name="id" type="INTEGER">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="airport_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(10)">
+                <constraints nullable="false"/>
             </column>
             <column name="name" type="VARCHAR(60)">
                 <constraints nullable="false"/>
@@ -112,13 +161,26 @@
             <column name="state" type="VARCHAR(30)">
                 <constraints nullable="false"/>
             </column>
-            <column name="country_code" type="VARCHAR(15)">
-                <constraints nullable="false" foreignKeyName="country_pkey" referencedTableName="country"/>
+        </createTable>
+    </changeSet>
+    <changeSet  author="Mehmet Simsek" id="Create Airport Country table">
+        <createTable tableName="airport_country">
+            <column name="airport_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="country_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="airport_code" type="VARCHAR(10)">
+                <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
+    <changeSet author="Mehmet Simsek" id="Create PrimaryKey Airport Country" >
+        <addPrimaryKey tableName="airport_country" columnNames="airport_id, country_id" constraintName="airport_country_pkey" />
+    </changeSet>
     <changeSet author="Mehmet Simsek (generated)" id="Create Employees Table">
-        <createTable tableName="employees">
+        <createTable tableName="employee">
             <column autoIncrement="true" name="id" type="INTEGER">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="employees_pkey"/>
             </column>
@@ -137,9 +199,22 @@
             <column name="contact" type="VARCHAR(60)">
                 <constraints nullable="false"/>
             </column>
-            <column name="airport_code" type="VARCHAR(15)">
-                <constraints nullable="false" foreignKeyName="airport_pkey" referencedTableName="airport"/>
+        </createTable>
+    </changeSet>
+    <changeSet  author="Mehmet Simsek" id="Create Airport Employee table">
+        <createTable tableName="airport_employee">
+            <column name="airport_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="employee_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="airport_code" type="VARCHAR(10)">
+                <constraints nullable="false"/>
             </column>
         </createTable>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="Create PrimaryKey Airport Employee" >
+        <addPrimaryKey tableName="airport_employee" columnNames="airport_id, employee_id" constraintName="airport_employee_pkey" />
     </changeSet>
 </databaseChangeLog>

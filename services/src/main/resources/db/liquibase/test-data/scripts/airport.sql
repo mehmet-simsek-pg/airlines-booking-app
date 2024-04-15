@@ -1,5 +1,5 @@
-INSERT INTO airport VALUES('DEL','Indira Gandhi International Airport','Delhi','UP', '+91');
-INSERT INTO airport VALUES('BOM','Chhatrapati Shivaji Maharaj International Airport','Mumbai','Maharashtra','+91');
-INSERT INTO airport VALUES('LCY','London City Airport','Newham','London','+44');
-INSERT INTO airport VALUES('EWR','Newark Liberty International Airport','Newark','New Jersey','+1');
-INSERT INTO airport VALUES('JFK','John F.Kennnedy International Airport','NewYork City','New York','+1');
+INSERT INTO airport VALUES(1,'DEL','Indira Gandhi International Airport','Delhi','UP');
+INSERT INTO airport VALUES(2,'BOM','Chhatrapati Shivaji Maharaj International Airport','Mumbai','Maharashtra');
+INSERT INTO airport VALUES(3,'LCY','London City Airport','Newham','London');
+INSERT INTO airport VALUES(4,'EWR','Newark Liberty International Airport','Newark','New Jersey');
+INSERT INTO airport VALUES(5,'JFK','John F.Kennnedy International Airport','NewYork City','New York');

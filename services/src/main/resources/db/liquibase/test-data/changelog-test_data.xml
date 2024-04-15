@@ -29,6 +29,21 @@
         <sqlFile path="scripts/airport.sql" relativeToChangelogFile="true"/>
     </changeSet>
     <changeSet author="Mehmet Simsek" id="insert employees" runAlways="true">
-        <sqlFile path="scripts/employees.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="scripts/employee.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert airport_country" runAlways="true">
+        <sqlFile path="scripts/airport_country.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert airport employee" runAlways="true">
+        <sqlFile path="scripts/airport_employee.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert flight_airfare" runAlways="true">
+        <sqlFile path="scripts/flight_airfare.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert flight_airplane" runAlways="true">
+        <sqlFile path="scripts/flight_airplane.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert flight_passenger" runAlways="true">
+        <sqlFile path="scripts/flight_passenger.sql" relativeToChangelogFile="true"/>
     </changeSet>
 </databaseChangeLog>
