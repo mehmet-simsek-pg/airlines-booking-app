@@ -13,7 +13,7 @@ public class AirplaneEntityConverter implements AttributeConverter<AirplaneEntit
     }
 
     @Override
-    public AirplaneEntity convertToEntityAttribute(Long dbData) {
+    public AirplaneEntity convertToEntityAttribute(final Long dbData) {
         return new AirplaneEntity(dbData);
     }
 }
