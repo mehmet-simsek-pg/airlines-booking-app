@@ -37,9 +37,6 @@
     <changeSet author="Mehmet Simsek" id="insert employees" runAlways="true">
         <sqlFile path="scripts/employee.sql" relativeToChangelogFile="true"/>
     </changeSet>
-    <changeSet author="Mehmet Simsek" id="insert airport employee" runAlways="true">
-        <sqlFile path="scripts/airport_employee.sql" relativeToChangelogFile="true"/>
-    </changeSet>
     <changeSet author="Mehmet Simsek" id="insert flight_airfare" runAlways="true">
         <sqlFile path="scripts/flight_airfare.sql" relativeToChangelogFile="true"/>
     </changeSet>
