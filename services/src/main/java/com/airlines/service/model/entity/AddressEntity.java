@@ -18,6 +18,9 @@ public class AddressEntity {
     @Column(name = "state")
     private String state;
 
+    @Column(name = "city")
+    private String city;
+
     @ManyToOne()
     @JoinColumn(name = "country_id", referencedColumnName = "id")
     private CountryEntity country;
@@ -33,6 +36,7 @@ public class AddressEntity {
 
         this.street_number = address.getStreet_number();
         this.state = address.getState();
+        this.city = address.getCity();
         this.country = new CountryEntity(address.getCountry());
 
     }
@@ -61,6 +65,14 @@ public class AddressEntity {
         this.state = state;
     }
 
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
     public CountryEntity getCountry() {
         return country;
     }
@@ -76,6 +88,7 @@ public class AddressEntity {
         result.setId(getId());
         result.setStreet_number(getStreet_number());
         result.setState(getState());
+        result.setCity(getCity());
         result.setCountry(getCountry().toCountry());
 
         return result;

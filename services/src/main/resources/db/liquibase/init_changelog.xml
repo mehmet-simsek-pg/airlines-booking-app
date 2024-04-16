@@ -193,13 +193,13 @@
             <column name="name" type="VARCHAR(60)">
                 <constraints nullable="false"/>
             </column>
-            <column name="country_id" type="BIGINT">
+            <column name="address_id" type="BIGINT">
                 <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
-    <changeSet author="Mehmet Simsek (generated)" id="Add Foreign key country to airport">
-        <addForeignKeyConstraint baseColumnNames="country_id" baseTableName="airport" constraintName="fk_country_id" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="country" validate="true"/>
+    <changeSet author="Mehmet Simsek (generated)" id="Add Foreign key address to airport">
+        <addForeignKeyConstraint baseColumnNames="address_id" baseTableName="airport" constraintName="fk_address_id" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="address" validate="true"/>
     </changeSet>
     <changeSet author="Mehmet Simsek (generated)" id="Create Employees Table">
         <createTable tableName="employee">
