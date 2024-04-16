@@ -19,20 +19,23 @@
     <changeSet author="Mehmet Simsek" id="insert airfare" runAlways="true">
         <sqlFile path="scripts/airfare.sql" relativeToChangelogFile="true"/>
     </changeSet>
-    <changeSet author="Mehmet Simsek" id="insert passenger" runAlways="true">
-        <sqlFile path="scripts/passenger.sql" relativeToChangelogFile="true"/>
+    <changeSet author="Mehmet Simsek" id="insert gender" runAlways="true">
+        <sqlFile path="scripts/gender.sql" relativeToChangelogFile="true"/>
     </changeSet>
     <changeSet author="Mehmet Simsek" id="insert country" runAlways="true">
         <sqlFile path="scripts/country.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert address" runAlways="true">
+        <sqlFile path="scripts/address.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="Mehmet Simsek" id="insert passenger" runAlways="true">
+        <sqlFile path="scripts/passenger.sql" relativeToChangelogFile="true"/>
     </changeSet>
     <changeSet author="Mehmet Simsek" id="insert airport" runAlways="true">
         <sqlFile path="scripts/airport.sql" relativeToChangelogFile="true"/>
     </changeSet>
     <changeSet author="Mehmet Simsek" id="insert employees" runAlways="true">
         <sqlFile path="scripts/employee.sql" relativeToChangelogFile="true"/>
-    </changeSet>
-    <changeSet author="Mehmet Simsek" id="insert airport_country" runAlways="true">
-        <sqlFile path="scripts/airport_country.sql" relativeToChangelogFile="true"/>
     </changeSet>
     <changeSet author="Mehmet Simsek" id="insert airport employee" runAlways="true">
         <sqlFile path="scripts/airport_employee.sql" relativeToChangelogFile="true"/>
