@@ -221,26 +221,15 @@
             <column name="contact" type="VARCHAR(60)">
                 <constraints nullable="false"/>
             </column>
+            <column name="airport_id" type="BIGINT">
+                <constraints nullable="false" />
+            </column>
         </createTable>
     </changeSet>
     <changeSet author="Mehmet Simsek (generated)" id="Add Foreign key address to employee">
         <addForeignKeyConstraint baseColumnNames="address_id" baseTableName="employee" constraintName="fk_address_id" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="address" validate="true"/>
     </changeSet>
-    <changeSet  author="Mehmet Simsek" id="Create Airport Employee table">
-        <createTable tableName="airport_employee">
-            <column name="airport_id" type="INTEGER">
-                <constraints nullable="false"/>
-            </column>
-            <column name="employee_id" type="INTEGER">
-                <constraints nullable="false"/>
-            </column>
-            <column name="airport_code" type="VARCHAR(10)">
-                <constraints nullable="false"/>
-            </column>
-        </createTable>
+    <changeSet author="Mehmet Simsek (generated)" id="Add Foreign key airport to employee">
+        <addForeignKeyConstraint baseColumnNames="airport_id" baseTableName="employee" constraintName="fk_airport_id" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="airport" validate="true"/>
     </changeSet>
-    <changeSet author="Mehmet Simsek" id="Create PrimaryKey Airport Employee" >
-        <addPrimaryKey tableName="airport_employee" columnNames="airport_id, employee_id" constraintName="airport_employee_pkey" />
-    </changeSet>
-
 </databaseChangeLog>
